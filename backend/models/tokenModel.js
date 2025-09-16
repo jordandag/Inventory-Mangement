@@ -20,6 +20,7 @@ const tokenSchema = mongoose.Schema({
   expiresAt: {
     type: Date,
     required: true,
+    expires: 0, // TTL index: delete when expiresAt is reached
   },
 });
 
